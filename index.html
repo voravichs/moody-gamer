@@ -13,16 +13,20 @@
 <body>
     <!-- Persistent Moody Gamer Header -->
     <header class="container mx-auto">
-        <h1 class="text-center text-8xl"> Moody Gamer </h1>
+        <h1 class="text-center text-8xl mb-8"> Moody Gamer </h1>
     </header>
 
     <!-- Container for main content -->
     <main class="container mx-auto" id="main-content">
         <!-- Front Page -->
-        <div></div>
+        <div class="grid grid-rows-3 hidden" id="start-page">
+            <h2 class="text-center text-7xl mb-8">Welcome!</h2>
+            <h2 class="text-center text-7xl mb-8"> Do you want to play a game?</h2>
+            <button class="justify-center">Start Here -></button>
+        </div>
 
         <!-- Mood Page -->
-        <div id="mood-choices">
+        <div class="hidden" id="mood-choices">
             <h2>How are you feeling today?</h2>
             <button style="font-size:100px">&#128512;</button>
             <button style="font-size:100px">&#128541;</button>
@@ -33,7 +37,7 @@
         </div>
 
         <!-- Astrology Sign Page -->
-        <div id="sign">
+        <div class="hidden" id="sign">
             <h2>What's your sign?</h2>
             <a class = "btn">
                 <img src="./assets/images/aquarius.png" alt="aquarius">
@@ -75,7 +79,7 @@
 
 
         <!-- Results Page -->
-        <div id="results-page">
+        <div class="hidden" id="results-page">
             <h2> Your Results </h2>
             
             <!-- Game Recommendations-->
@@ -96,8 +100,8 @@
             </div>
             <!-- Horoscope -->
             <div id="horoscope">
-                <p></p>
-                <p></p>
+                <p> You are feeling <span id="user-input-mood"></span> </p>
+                <p> But your horoscope says <span id="horoscope-mood"></span> </p>
             </div>
         </div>    
     </main>
