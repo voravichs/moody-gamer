@@ -31,3 +31,16 @@ This project is an app to suggest what games a user should play depending on ast
     THEN I am given the top 10 game recommendations for the last week
     WHEN I enter tags, genres, and/or keywords into a search bar
     THEN I am given a list of recommended games
+
+
+## Procedure
+
+### Order of Operations
+HTML: Together
+CSS + JS Cycling: Pairs
+API Display: Pairs
+
+### Pairs
+CSS + JS Cycling: Voravich & Tabitha
+
+API Research and Display:  Jake & Josh
