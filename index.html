@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Moody Gamer</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Links to CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
@@ -15,15 +15,23 @@
         Hello world!
       </h1>
     <!-- Persistent Moody Gamer Header -->
-    <header></header>
+    <header>
+        <h1> Moody Gamer </h1>
+    </header>
 
-    <!-- Front Page -->
-    <div></div>
+    <!-- Container for main content -->
+    <main id="main-content">
+        <!-- Front Page -->
+        <div></div>
 
-    <!-- Mood Page -->
-    <div></div>
+        <!-- Mood Page -->
+        <div></div>
 
-    <!-- Astrology Sign Page -->
+
+        <!-- Astrology Sign Page -->
+        <div></div>
+
+     <!-- Astrology Sign Page -->
     <div id="sign">
         <a class = "btn">
             <img src="./assets/images/aquarius.png" alt="aquarius">
@@ -63,15 +71,40 @@
         </a>
     </div>
 
-    <!-- Results Page -->
-    <div></div>
+
+        <!-- Results Page -->
+        <div id="results-page">
+            <h2> Your Results </h2>
+            
+            <!-- Game Recommendations-->
+            <div>
+                <!-- Genre -->
+                <div id="game-genre">
+                    <p></p>
+                </div>
+                <!-- Games-->
+                <div id="game-recs">
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                    <div class="card"></div>
+                </div>
+            </div>
+            <!-- Horoscope -->
+            <div id="horoscope">
+                <p></p>
+                <p></p>
+            </div>
+        </div>    
+    </main>
+    
 
     <!-- External Script Links -->
     <!-- Jquery & Jquery UI-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <!-- JS Script-->
     <script src="./assets/js/script.js"></script>
-    <!-- Tailwind CSS -->
-    
 </body>
 </html>
