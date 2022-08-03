@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,9 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Links to CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
-    
+
 </head>
+
 <body>
     <!-- Persistent Moody Gamer Header -->
     <header class="container mx-auto">
@@ -17,79 +19,107 @@
     </header>
 
     <!-- Container for main content -->
-    <main class="container mx-auto" id="main-content">
-        <!-- Front Page -->
-        <div class="grid grid-rows-3 gap-8 hidden" id="start-page">
+    <main class="container mx-auto max-w-screen-xl" id="main-content">
+        <!-- Start Page -->
+        <div class="grid grid-rows-3 gap-8" id="start-page">
             <h2 class="text-center text-6xl mb-9">Welcome!</h2>
             <h2 class="text-center text-6xl mb-9"> Do you want to play a game?</h2>
             <button class="bg-sky-500 text-6xl rounded-lg" id="start-btn">Start Here -></button>
         </div>
 
         <!-- Mood Page -->
-        <div class="" id="mood-choices">
-            <h2 class="text-center text-6xl mb-9">How are you feeling today?</h2>
-            <div class="grid grid-rows-6 grid-cols-2 md:grid-rows-3 md:grid-cols-4">
-                <button class="text-left text-9xl mb-9 ml-5 icon">&#128512;</button>
-                <p>text</p>
-                <button class="text-left text-9xl mb-9 ml-5 icon">&#128541;</button>
-                <p>text</p>
-                <button class="text-left text-9xl mb-9 ml-5 icon">&#128528;</button>
-                <p>text</p>
-                <button class="text-left text-9xl mb-9 ml-5 icon">&#128532;</button>
-                <p>text</p>
-                <button class="text-left text-9xl mb-9 ml-5 icon">&#128534;</button>
-                <p>text</p>
-                <button class="text-left text-9xl mb-9 ml-5 icon">&#128545;</button>
-                <p>text</p>
-            </div>  
-        </div> 
+        <div class="hidden" id="mood-choices">
+            <h2 class="text-center text-6xl mb-20">How are you feeling today?</h2>
+            <!-- Container for grid of moods-->
+            <div class="grid grid-rows-6 grid-cols-2 md:grid-rows-3 md:grid-cols-4 gap-y-9">
+                <button class="text-center text-9xl mb-9 ml-5 icon" id="happy">&#128512;</button>
+                <p class="mb-9 mr-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, mollitia
+                    dolorum? Est, iste laboriosam! Similique, in ex impedit quam perspiciatis laboriosam voluptatibus,
+                    totam deleniti libero itaque, illum quas voluptatem labore!</p>
+                <button class="text-center text-9xl mb-9 ml-5 icon" id="silly">&#128541;</button>
+                <p class="mb-9 mr-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae
+                    nihil quod provident ratione reprehenderit eligendi quis qui vitae non sed, iste facilis molestiae
+                    suscipit doloremque obcaecati modi nam quibusdam.</p>
+                <button class="text-center text-9xl mb-9 ml-5 icon" id="neutral">&#128528;</button>
+                <p class="mb-9 mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque illum
+                    dicta doloribus distinctio culpa sapiente repudiandae accusamus tenetur nesciunt mollitia
+                    blanditiis, deleniti minima beatae reprehenderit pariatur quas, similique numquam!</p>
+                <button class="text-center text-9xl mb-9 ml-5 icon" id="sad">&#128532;</button>
+                <p class="mb-9 mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi nulla officia
+                    iste rerum cum! Animi molestiae libero aliquam perspiciatis natus obcaecati et! Odio natus nemo esse
+                    fugiat accusamus rerum.</p>
+                <button class="text-center text-9xl mb-9 ml-5 icon" id="fear">&#128534;</button>
+                <p class="mb-9 mr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perspiciatis
+                    autem id soluta vel! Minus veritatis et cupiditate quia asperiores. Cumque obcaecati est sint! Illum
+                    corporis iure impedit fugit libero!</p>
+                <button class="text-center text-9xl mb-9 ml-5 icon" id="angry">&#128545;</button>
+                <p class="mb-9 mr-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quas tenetur
+                    numquam, ab atque, reprehenderit assumenda maiores saepe veritatis ut, laudantium maxime at
+                    exercitationem quis magni illo eaque quisquam eligendi?</p>
+            </div>
+        </div>
 
         <!-- Astrology Sign Page -->
         <div class="hidden" id="sign">
-            <h2>What's your sign?</h2>
-            <button class = "btn">
-                <img src="./assets/images/aquarius.png" alt="aquarius">
-            </button>
-            <button class = "btn">
-                <img src="./assets/images/pisces.png" alt="pisces">
-            </button>
-            <button class = "btn">
-                <img src="./assets/images/aries.png" alt="aries">
-            </button>
-            <button class = "btn">
-                <img src="./assets/images/taurus.png" alt="taurus">
-            </button>
-            <button class = "btn">
-                <img src="./assets/images/gemini.png" alt="gemini">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/cancer.png" alt="cancer">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/leo.png" alt="leo">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/virgo.png" alt="virgo">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/libra.png" alt="libra">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/scorpio.png" alt="scorpio">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/sagittarius.png" alt="sagittarius">
-            </button>
-            <button class = "btn">
-                    <img src="./assets/images/capricorn.png" alt="capricorn">
-            </button>
+            <h2 class="text-center text-6xl mb-20">What's your Astrological sign?</h2>
+            <!-- Container for grid of signs-->
+            <div class="grid grid-rows-6 grid-cols-2  md:grid-rows-4 md:grid-cols-3  lg:grid-rows-3 lg:grid-cols-4 gap-y-6">
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/aquarius.png" alt="aquarius">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/pisces.png" alt="pisces">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/aries.png" alt="aries">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/taurus.png" alt="taurus">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/gemini.png" alt="gemini">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/cancer.png" alt="cancer">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/leo.png" alt="leo">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/virgo.png" alt="virgo">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/libra.png" alt="libra">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/scorpio.png" alt="scorpio">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/sagittarius.png" alt="sagittarius">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+                <button class="mb-10 flex flex-col items-center btn">
+                    <img class="w-4/5" src="./assets/images/capricorn.png" alt="capricorn">
+                    <p class="block">Lorem ipsum dolor.</p>
+                </button>
+            </div>
         </div>
 
 
         <!-- Results Page -->
         <div class="hidden" id="results-page">
             <h2> Your Results </h2>
-            
+
             <!-- Game Recommendations-->
             <div>
                 <!-- Genre -->
@@ -111,9 +141,9 @@
                 <p> You are feeling <span id="user-input-mood"></span> </p>
                 <p> But your horoscope says <span id="horoscope-mood"></span> </p>
             </div>
-        </div>    
+        </div>
     </main>
-    
+
 
     <!-- External Script Links -->
     <!-- Jquery & Jquery UI-->
@@ -121,4 +151,5 @@
     <!-- JS Script-->
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

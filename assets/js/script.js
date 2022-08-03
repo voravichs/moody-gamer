@@ -9,37 +9,8 @@ var horoscopeEl = $('#horoscope');
 var inputMoodEl = $('#user-input-mood');
 var horoscopeMoodEl = $('#horoscope-mood');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // make var for RAWG API
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
-
 
 // Handle changing page through carosel/cycling
 // display/showing
@@ -58,11 +29,6 @@ $(document).ready(function() {
         resultPageEl.toggleClass('hidden');
     });
 });
-// function to fetch data from RAWG
-getVideoGames = function(event) {
-    event.preventDefault();
-    var game = $('game-recs');
-    console.log(game);
 
     var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 
