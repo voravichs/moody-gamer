@@ -13,28 +13,36 @@
 <body>
     <!-- Persistent Moody Gamer Header -->
     <header class="container mx-auto">
-        <h1 class="text-center text-8xl mb-8"> Moody Gamer </h1>
+        <h1 class="text-center text-8xl mb-8 p-8"> Moody Gamer </h1>
     </header>
 
     <!-- Container for main content -->
     <main class="container mx-auto" id="main-content">
         <!-- Front Page -->
-        <div class="grid grid-rows-3 show" id="start-page">
-            <h2 class="text-center text-7xl mb-8">Welcome!</h2>
-            <h2 class="text-center text-7xl mb-8"> Do you want to play a game?</h2>
-            <button class="justify-center" id="start-btn">Start Here -></button>
+        <div class="grid grid-rows-3 gap-8 hidden" id="start-page">
+            <h2 class="text-center text-6xl mb-9">Welcome!</h2>
+            <h2 class="text-center text-6xl mb-9"> Do you want to play a game?</h2>
+            <button class="bg-sky-500 text-6xl rounded-lg" id="start-btn">Start Here -></button>
         </div>
 
         <!-- Mood Page -->
-        <div class="hidden" id="mood-choices">
-            <h2>How are you feeling today?</h2>
-            <button style="font-size:100px" class="icon">&#128512;</button>
-            <button style="font-size:100px" class="icon">&#128541;</button>
-            <button style="font-size:100px" class="icon">&#128528;</button>
-            <button style="font-size:100px" class="icon">&#128532;</button>
-            <button style="font-size:100px" class="icon">&#128534;</button>
-            <button style="font-size:100px" class="icon">&#128545;</button>
-        </div>
+        <div class="" id="mood-choices">
+            <h2 class="text-center text-6xl mb-9">How are you feeling today?</h2>
+            <div class="grid grid-rows-6 grid-cols-2 md:grid-rows-3 md:grid-cols-4">
+                <button class="text-left text-9xl mb-9 ml-5 icon">&#128512;</button>
+                <p>text</p>
+                <button class="text-left text-9xl mb-9 ml-5 icon">&#128541;</button>
+                <p>text</p>
+                <button class="text-left text-9xl mb-9 ml-5 icon">&#128528;</button>
+                <p>text</p>
+                <button class="text-left text-9xl mb-9 ml-5 icon">&#128532;</button>
+                <p>text</p>
+                <button class="text-left text-9xl mb-9 ml-5 icon">&#128534;</button>
+                <p>text</p>
+                <button class="text-left text-9xl mb-9 ml-5 icon">&#128545;</button>
+                <p>text</p>
+            </div>  
+        </div> 
 
         <!-- Astrology Sign Page -->
         <div class="hidden" id="sign">
