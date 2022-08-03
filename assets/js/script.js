@@ -32,31 +32,41 @@ $(document).ready(function() {
     });
 });
 
-// function to fetch data from RAWG
-//getVideoGames = function(event) {
-//    event.preventDefault();
-//    var game = $('game-recs');
-//    console.log(game);
-//
-//    var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
-//
-//    fetch (rawgApiUrl)
-//    .then (function (reponse) {
-//        return reponse.json()
-//    })
-//    .then (function (data) {
-//        console.log(data);
-//        document.querySelector('#game-recs').textContent = 
-//        document.querySelector('#game-genre').textContent = 
-//    })
-//}
+    var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 
-//getHoroscope = function(event) {
-//    event.preventDefault();
-//    console.log(horoscopeMoodEl);
-//
-//    var aztroApiUrl = 
-//}
+    fetch (rawgApiUrl)
+    .then (function (reponse) {
+        return reponse.json()
+    })
+    .then (function (data) {
+        console.log(data);
+        document.querySelector('#game-recs').textContent = data.name;
+        document.querySelector('#game-genre').textContent = data.genres;
+    })
+}
+
+// const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
+// fetch (rawgApiUrl, {
+//     method: 'POST'
+// })
+// .then(response => response.json())
+// .then(json => {
+//     console.log(json);
+//     document.querySelector('#game-recs').textContent = json.name;
+//         document.querySelector('#game-genre').textContent = json.genres;
+// })
+
+
+const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+fetch(aztroApiURL, {
+    method: 'POST'
+})
+.then(response => response.json())
+.then(json => {
+    console.log(json);
+    const date = json.current_date;
+    console.log(date);
+});
 
 // function to fetch data from Aztro
 
