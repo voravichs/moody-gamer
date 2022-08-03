@@ -9,34 +9,6 @@ var horoscopeEl = $('#horoscope');
 var inputMoodEl = $('#user-input-mood');
 var horoscopeMoodEl = $('#horoscope-mood');
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // make var for RAWG API
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
 
@@ -48,41 +20,44 @@ $(document).ready(function() {
         startPageEl.toggleClass('hidden');
         moodPageEl.toggleClass('hidden');
     });
-    $('.icon').click(function(){
+    $('.icon').click(function(event){
         moodPageEl.toggleClass('hidden');
         signPageEl.toggleClass('hidden');
+        console.log(event.target);
     });
-    $('.btn').click(function(){
+    $('.btn').click(function(event){
         // moodPageEl.toggleClass('hidden');
         signPageEl.toggleClass('hidden');
         resultPageEl.toggleClass('hidden');
+        console.log(event.target.alt);
     });
 });
-// function to fetch data from RAWG
-getVideoGames = function(event) {
-    event.preventDefault();
-    var game = $('game-recs');
-    console.log(game);
 
-    var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
+// // function to fetch data from RAWG
+// getVideoGames = function(event) {
+//     event.preventDefault();
+//     var game = $('game-recs');
+//     console.log(game);
 
-    fetch (rawgApiUrl)
-    .then (function (reponse) {
-        return reponse.json()
-    })
-    .then (function (data) {
-        console.log(data);
-        document.querySelector('#game-recs').textContent = 
-        document.querySelector('#game-genre').textContent = 
-    })
-}
+//     var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 
-getHoroscope = function(event) {
-    event.preventDefault();
-    console.log(horoscopeMoodEl);
+//     fetch (rawgApiUrl)
+//     .then (function (reponse) {
+//         return reponse.json()
+//     })
+//     .then (function (data) {
+//         console.log(data);
+//         document.querySelector('#game-recs').textContent = 
+//         document.querySelector('#game-genre').textContent = 
+//     })
+// }
 
-    var aztroApiUrl = 
-}
+// getHoroscope = function(event) {
+//     event.preventDefault();
+//     console.log(horoscopeMoodEl);
+
+//     var aztroApiUrl = 
+// }
 
 // function to fetch data from Aztro
 
