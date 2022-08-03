@@ -32,18 +32,18 @@ $(document).ready(function() {
     });
 });
 
-    var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
+var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 
-    fetch (rawgApiUrl)
-    .then (function (reponse) {
-        return reponse.json()
-    })
-    .then (function (data) {
-        console.log(data);
-        document.querySelector('#game-recs').textContent = data.name;
-        document.querySelector('#game-genre').textContent = data.genres;
-    })
-}
+fetch (rawgApiUrl)
+.then (function (reponse) {
+    return reponse.json()
+})
+.then (function (data) {
+    console.log(data);
+    document.querySelector('#game-recs').textContent = data.name;
+    document.querySelector('#game-genre').textContent = data.genres;
+})
+
 
 // const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 // fetch (rawgApiUrl, {
