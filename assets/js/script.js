@@ -43,7 +43,21 @@ var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
 
 // Handle changing page through carosel/cycling
 // display/showing
-
+$(document).ready(function() {
+    $('#start-btn').click(function(){
+        startPageEl.toggleClass('hidden');
+        moodPageEl.toggleClass('hidden');
+    });
+    $('.icon').click(function(){
+        moodPageEl.toggleClass('hidden');
+        signPageEl.toggleClass('hidden');
+    });
+    $('.btn').click(function(){
+        // moodPageEl.toggleClass('hidden');
+        signPageEl.toggleClass('hidden');
+        resultPageEl.toggleClass('hidden');
+    });
+});
 // function to fetch data from RAWG
 getVideoGames = function(event) {
     event.preventDefault();
