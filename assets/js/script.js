@@ -19,14 +19,16 @@ $(document).ready(function() {
         startPageEl.toggleClass('hidden');
         moodPageEl.toggleClass('hidden');
     });
-    $('.icon').click(function(){
+    $('.icon').click(function(event){
         moodPageEl.toggleClass('hidden');
         signPageEl.toggleClass('hidden');
+        console.log(event.target);
     });
-    $('.btn').click(function(){
+    $('.btn').click(function(event){
         // moodPageEl.toggleClass('hidden');
         signPageEl.toggleClass('hidden');
         resultPageEl.toggleClass('hidden');
+        console.log(event.target.alt);
     });
 });
 
@@ -41,6 +43,7 @@ fetch (rawgApiUrl)
     document.querySelector('#game-recs').textContent = data.name;
     document.querySelector('#game-genre').textContent = data.genres;
 })
+
 
 // const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 // fetch (rawgApiUrl, {
