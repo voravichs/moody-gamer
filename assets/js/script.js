@@ -12,7 +12,6 @@ var horoscopeMoodEl = $('#horoscope-mood');
 // make var for RAWG API
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
 
-
 // Handle changing page through carosel/cycling
 // display/showing
 $(document).ready(function() {
@@ -33,31 +32,31 @@ $(document).ready(function() {
     });
 });
 
-// // function to fetch data from RAWG
-// getVideoGames = function(event) {
-//     event.preventDefault();
-//     var game = $('game-recs');
-//     console.log(game);
+// function to fetch data from RAWG
+//getVideoGames = function(event) {
+//    event.preventDefault();
+//    var game = $('game-recs');
+//    console.log(game);
+//
+//    var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
+//
+//    fetch (rawgApiUrl)
+//    .then (function (reponse) {
+//        return reponse.json()
+//    })
+//    .then (function (data) {
+//        console.log(data);
+//        document.querySelector('#game-recs').textContent = 
+//        document.querySelector('#game-genre').textContent = 
+//    })
+//}
 
-//     var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
-
-//     fetch (rawgApiUrl)
-//     .then (function (reponse) {
-//         return reponse.json()
-//     })
-//     .then (function (data) {
-//         console.log(data);
-//         document.querySelector('#game-recs').textContent = 
-//         document.querySelector('#game-genre').textContent = 
-//     })
-// }
-
-// getHoroscope = function(event) {
-//     event.preventDefault();
-//     console.log(horoscopeMoodEl);
-
-//     var aztroApiUrl = 
-// }
+//getHoroscope = function(event) {
+//    event.preventDefault();
+//    console.log(horoscopeMoodEl);
+//
+//    var aztroApiUrl = 
+//}
 
 // function to fetch data from Aztro
 
