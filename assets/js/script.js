@@ -72,17 +72,33 @@ getVideoGames = function(event) {
     })
     .then (function (data) {
         console.log(data);
-        document.querySelector('#game-recs').textContent = 
-        document.querySelector('#game-genre').textContent = 
+        document.querySelector('#game-recs').textContent = data.name;
+        document.querySelector('#game-genre').textContent = data.genres;
     })
 }
 
-getHoroscope = function(event) {
-    event.preventDefault();
-    console.log(horoscopeMoodEl);
+// const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
+// fetch (rawgApiUrl, {
+//     method: 'POST'
+// })
+// .then(response => response.json())
+// .then(json => {
+//     console.log(json);
+//     document.querySelector('#game-recs').textContent = json.name;
+//         document.querySelector('#game-genre').textContent = json.genres;
+// })
 
-    var aztroApiUrl = 
-}
+
+const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
+fetch(aztroApiURL, {
+    method: 'POST'
+})
+.then(response => response.json())
+.then(json => {
+    console.log(json);
+    const date = json.current_date;
+    console.log(date);
+});
 
 // function to fetch data from Aztro
 
