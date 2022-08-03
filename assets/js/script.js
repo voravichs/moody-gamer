@@ -13,7 +13,21 @@ var horoscopeMoodEl = $('#horoscope-mood');
 
 // Handle changing page through carosel/cycling
 // display/showing
-
+$(document).ready(function() {
+    $('#start-btn').click(function(){
+        startPageEl.toggleClass('hidden');
+        moodPageEl.toggleClass('hidden');
+    });
+    $('.icon').click(function(){
+        moodPageEl.toggleClass('hidden');
+        signPageEl.toggleClass('hidden');
+    });
+    $('.btn').click(function(){
+        // moodPageEl.toggleClass('hidden');
+        signPageEl.toggleClass('hidden');
+        resultPageEl.toggleClass('hidden');
+    });
+});
 // function to fetch data from RAWG
 // function to fetch data from Aztro
 
