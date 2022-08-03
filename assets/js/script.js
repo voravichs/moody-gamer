@@ -16,10 +16,12 @@ var horoscopeMoodEl = $('#horoscope-mood');
 $(document).ready(function() {
     $('#start-btn').click(function(){
         startPageEl.toggleClass('hidden');
-        moodPageEl.toggleClass('show');
+        moodPageEl.toggleClass('hidden');
+    });
+    $('.icon').click(function(){
+        moodPageEl.toggleClass('hidden');
         signPageEl.toggleClass('hidden');
-        resultPageEl.toggleClass('hidden');
-    });   
+    });
 });
 // function to fetch data from RAWG
 // function to fetch data from Aztro
