@@ -22,6 +22,11 @@ $(document).ready(function() {
         moodPageEl.toggleClass('hidden');
         signPageEl.toggleClass('hidden');
     });
+    $('.btn').click(function(){
+        // moodPageEl.toggleClass('hidden');
+        signPageEl.toggleClass('hidden');
+        resultPageEl.toggleClass('hidden');
+    });
 });
 // function to fetch data from RAWG
 // function to fetch data from Aztro
