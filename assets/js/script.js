@@ -63,12 +63,16 @@ $(document).ready(function() {
     // Function to reload results from most recent sign and mood from local storage
     $('#load-btn').on('click', loadGames);
     function loadGames() {
-        mood = localStorage.getItem('mood');
-        sign = localStorage.getItem('sign');
-        startPageEl.toggleClass('hidden');
-        resultPageEl.toggleClass('hidden');
-        getGames();
-        setHoroscope();
+        if (localStorage.getItem('mood') == null) {
+            return;
+        } else {
+            mood = localStorage.getItem('mood');
+            sign = localStorage.getItem('sign');
+            startPageEl.toggleClass('hidden');
+            resultPageEl.toggleClass('hidden');
+            getGames();
+            setHoroscope();
+        }
     }
 });
 
@@ -79,7 +83,6 @@ function getGames() {
         return reponse.json()
     })
     .then (function (data) {
-        console.log(data);
         // Genre 
         var signGenreIndex = 0;
         for (let i = 0; i < genreIndexes.length; i++) {
@@ -94,7 +97,6 @@ function getGames() {
 
         // Game Recs 
         for (let i = 0; i < 6; i++) {
-            console.log(gameRecsEl[0]);
             $(gameRecsEl[0]).append('<p class="text-center">' + data.results[signGenreIndex].games[i].name + '</p>');
         }
     })
@@ -108,7 +110,6 @@ function setHoroscope() {
     })
     .then(response => response.json())
     .then(json => {
-        console.log(json);
         inputMoodEl[0].textContent = mood;
         horoscopeMoodEl[0].textContent = json.mood;
         horoscopeDescEl[0].textContent = json.description;
