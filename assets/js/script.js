@@ -3,7 +3,7 @@ var startPageEl = $('#start-page');
 var moodPageEl = $('#mood-choices');
 var signPageEl = $('#sign');
 var resultPageEl = $('#results-page');
-var gameGenreEl = $('game-genre');
+var gameGenreEl = $('#game-genre');
 var gameRecsEl = $('#game-recs');
 var horoscopeEl = $('#horoscope');
 var inputMoodEl = $('#user-input-mood');
@@ -12,6 +12,23 @@ var sign = '';
 var mood = '';
 // make var for RAWG API
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
+var rawgApiUrl = 'https://api.rawg.io/api/genres?key=' + rawgAPIKey;
+
+// Assign genres to horoscope
+var genreIndexes = [
+    'sagittarius', // Action
+    'scorpio', // Indie 
+    'gemini', // Adventure 
+    'cancer', // RPG
+    'pisces', // Strategy
+    'capricorn', // Shooter 
+    'taurus', // Casual
+    'virgo', // Simulation 
+    'libra', // Puzzle
+    'aquarius', // Arcade
+    'leo', // Platformer
+    'aries', // Racing
+];
 
 // Handle changing page through carosel/cycling
 // display/showing
@@ -36,21 +53,39 @@ $(document).ready(function() {
         moodPageEl.toggleClass('hidden');
         resultPageEl.toggleClass('hidden');
         mood = event.target.id; 
+        getGames();
         console.log(mood);
     });
 });
 
-var rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
+function getGames() {
+    fetch (rawgApiUrl)
+    .then (function (reponse) {
+        return reponse.json()
+    })
+    .then (function (data) {
+        console.log(data);
+        console.log(gameGenreEl);
+        //gameRecsEl[0].textContent = data.results[1].games[0].name;
 
-fetch (rawgApiUrl)
-.then (function (reponse) {
-    return reponse.json()
-})
-.then (function (data) {
-    console.log(data);
-    gameRecsEl[0].textContent = data.results[1].games[0].name;
-    gameGenreEl[0].textContent = data.results[1].games[0].name;
-})
+        // Genre 
+        var signGenreIndex = 0;
+        for (let i = 0; i < genreIndexes.length; i++) {
+            if (sign == genreIndexes[i]) {
+                gameGenreEl[0].textContent = data.results[i].name;
+                signGenreIndex = i;
+            }
+        }
+        
+        // Game Recs 
+        for (let i = 0; i < 6; i++) {
+            console.log(gameRecsEl[0]);
+            gameRecsEl[0].append(data.results[signGenreIndex].games[i].name + '\n');
+        }
+        
+
+    })
+}
 
 const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
 fetch(aztroApiURL, {

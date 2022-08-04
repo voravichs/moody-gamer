@@ -32,31 +32,33 @@ This project is an app to suggest what games a user should play depending on ast
     WHEN I enter tags, genres, and/or keywords into a search bar
     THEN I am given a list of recommended games
 
-
-## Procedure
-
-
-
 ## Usage Instructions
 
-
+Upon loading the app, user is presented with a welcome page and a button saying "Start Here ->." Clicking that button will direct the user to a page that asks them to select their astrological sign. Hovering over any of the signs will add a border to the picture for additional button affordance. Selecting an astrological sign will direct the user to a page asking for their current mood. These six moods represent common moods adapted from 
 
 ## Screenshots
 
 * Moody Gamer Front Page
 
+* Website Emotion
+
 
 ## Contributors
 
 Joshua Rae: https://github.com/joshuar2155
+
 Jake McMillan: https://github.com/jakewmcmillan
+
 Tabitha Spencer-Salmon: https://github.com/TabithaLy
+
 Voravich Silapachairueng: https://github.com/voravichs
 
 ## Credits
 
 Credit to https://emma.ca/zodiac-signs for the zodiac pictures.
+
 Credit to https://www.schemecolor.com/night-sky-color-palette.php for the background gradient.
+
 Credit to https://cssgradient.io/ for easy CSS gradient creation.
 
 ## Github Deployed Site Link and Repository Link
