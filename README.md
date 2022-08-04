@@ -49,3 +49,4 @@ API Research and Display:  Jake & Josh
 
 https://emma.ca/zodiac-signs
 https://www.schemecolor.com/night-sky-color-palette.php
+https://cssgradient.io/
