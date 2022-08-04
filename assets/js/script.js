@@ -41,7 +41,6 @@ $(document).ready(function() {
         document.querySelector('#game-recs').textContent = data.name;
         document.querySelector('#game-genre').textContent = data.genres;
     })
-}
 
 // const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 // fetch (rawgApiUrl, {
