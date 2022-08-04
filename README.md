@@ -32,14 +32,9 @@ This project is an app to suggest what games a user should play depending on ast
     WHEN I enter tags, genres, and/or keywords into a search bar
     THEN I am given a list of recommended games
 
-
-## Procedure
-
-
-
 ## Usage Instructions
 
-
+Upon loading the app, user is presented with a welcome page and a button saying "Start Here ->." Clicking that button will direct the user to a page that asks them to select their astrological sign. Hovering over any of the signs will add a border to the picture for additional button affordance. Selecting an astrological sign will direct the user to a page asking for their current mood. These six moods represent common moods adapted from 
 
 ## Screenshots
 
