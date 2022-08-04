@@ -24,10 +24,13 @@
     <!-- Container for main content -->
     <main class="container mx-auto max-w-screen-xl" id="main-content">
         <!-- Start Page -->
-        <div class="grid grid-rows-3 gap-8 mx-8" id="start-page">
+        <div class="grid grid-rows-4 gap-8 mx-8 mb-8" id="start-page">
             <h2 class="text-center text-5xl md:text-6xl my-auto">Welcome!</h2>
             <h2 class="text-center text-5xl md:text-6xl my-auto"> Do you want to play a game?</h2>
             <button class="bg-indigo-500 hover:bg-indigo-600 drop-shadow-lg text-6xl hover:text-fuchsia-200 rounded-lg mx-auto p-8" id="start-btn">Start Here -></button>
+            <br>
+            <hr>
+            <button class="bg-indigo-500 hover:bg-indigo-600 drop-shadow-lg text-3xl hover:text-fuchsia-200 rounded-lg m-auto p-4" id="load-btn"> Load Last Saved Results</button>
         </div>
 
         <!-- Astrology Sign Page -->
@@ -111,8 +114,8 @@
                 <p class="ml-4 mb-8">NEUTRAL: An emotional state of feeling indifferent or calm.</p>
                 <button class="text-center text-9xl mb-9 icon" id="sad">&#128532;</button>
                 <p class="ml-4 mb-8">SAD: An emotional state characterized by feelings of dissapointment, grief, or hopelessness.</p>
-                <button class="text-center text-9xl mb-9 icon" id="fear">&#128534;</button>
-                <p class="ml-4 mb-8">FEAR: A primal emotion that is important to survival and triggers a fight of flight response.</p>
+                <button class="text-center text-9xl mb-9 icon" id="fear/stressed">&#128534;</button>
+                <p class="ml-4 mb-8">FEAR/STRESSED: A primal emotion that is important to survival and triggers a fight of flight response.</p>
                 <button class="text-center text-9xl mb-9 icon" id="angry">&#128545;</button>
                 <p class="ml-4 mb-8">ANGRY: An emotional state leading to feelings of hostility and frustration.</p>
             </div>
@@ -125,26 +128,28 @@
             <div class="grid grid-rows-4 lg:grid-rows-2 lg:grid-cols-2 grid-flow-col mx-8 gap-8">
                 <!-- Genre -->
                 <div>
-                    <h3 class="text-center text-4xl"> Genre</h3>
+                    <h3 class="text-center text-5xl text-fuchsia-300 font-bold underline decoration-amber-200"> Genre</h3>
                     <p class="text-center my-4 p-4 text-3xl" id="game-genre"></p>
+                    <img class="p-8" src="" alt="" id="genre-image">
                 </div>
                 <!-- Games-->
-                <div>
-                    <h3 class="text-center text-4xl"> Recs</h3>
+                <div  class="">
+                    <h3 class="text-center text-5xl text-fuchsia-300 font-bold underline decoration-amber-200"> Game Recommendations</h3>
                     <div class="my-4 p-4 text-3xl" id="game-recs"></div>
                 </div>
                 <!-- Horoscope -->
                 <div class="" id="horoscope">
-                    <h3 class="text-center text-4xl"> Your Daily Horoscope</h3>
+                    <h3 class="text-center text-5xl text-fuchsia-300 font-bold underline decoration-amber-200"> Your Daily Horoscope</h3>
                     <div class="my-4 p-4 text-3xl">
-                        <p> You are feeling <i id="user-input-mood">cool</i> </p>
-                        <p> Your horoscope says you're <i id="horoscope-mood">uncool</i> </p>  
+                        <p> You are feeling <i  class="text-fuchsia-300" id="user-input-mood">cool</i> </p>
+                        <p> Your horoscope says you're <i class="text-fuchsia-300" id="horoscope-mood">uncool</i> </p>  
+                        <br>
                         <p id="horoscope-description"></p>      
                     </div>
                 </div>   
                 <!-- Save button-->
-                <div>
-                    <button id="save-btn"> Save Result </button>
+                <div class="mx-auto">
+                    <button class="bg-indigo-500 hover:bg-indigo-600 drop-shadow-lg text-3xl hover:text-fuchsia-200 rounded-lg  p-4" id="save-btn"> Save Results </button>
                 </div>
             </div>  
         </div>
