@@ -56,8 +56,8 @@ fetch (rawgApiUrl)
     })
     .then (function (data) {
         console.log(data);
-        document.querySelector('#game-recs').textContent = data.name;
-        document.querySelector('#game-genre').textContent = data.genres;
+        $('#game-recs').textContent = data.name;
+        $('#game-genre').textContent = data.genres;
     })
 
 
