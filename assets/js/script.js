@@ -1,4 +1,3 @@
-var aztroAPIKey = '0c3a2c35c5mshca3267e96406afcp16bdbcjsn57d168946cdf';
 var startPageEl = $('#start-page');
 var moodPageEl = $('#mood-choices');
 var signPageEl = $('#sign');
@@ -10,9 +9,11 @@ var inputMoodEl = $('#user-input-mood');
 var horoscopeMoodEl = $('#horoscope-mood');
 var sign = '';
 var mood = '';
-// make var for RAWG API
+// APIs URLs and API Keys
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
 var rawgApiUrl = 'https://api.rawg.io/api/genres?key=' + rawgAPIKey;
+var aztroAPIKey = '0c3a2c35c5mshca3267e96406afcp16bdbcjsn57d168946cdf';
+const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=';
 
 // Assign genres to horoscope
 var genreIndexes = [
@@ -45,7 +46,6 @@ $(document).ready(function() {
             signPageEl.toggleClass('hidden');
             moodPageEl.toggleClass('hidden');
             sign = event.target.alt; 
-            console.log(sign);
         }  
     });
     // Mood Page -> Results Page
@@ -54,7 +54,7 @@ $(document).ready(function() {
         resultPageEl.toggleClass('hidden');
         mood = event.target.id; 
         getGames();
-        console.log(mood);
+        setHoroscope();
     });
 });
 
@@ -80,23 +80,26 @@ function getGames() {
         // Game Recs 
         for (let i = 0; i < 6; i++) {
             console.log(gameRecsEl[0]);
-            gameRecsEl[0].append(data.results[signGenreIndex].games[i].name + '\n');
+            gameRecsEl[0].children[i].textContent = data.results[signGenreIndex].games[i].name;
         }
-        
-
     })
 }
 
-const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
-fetch(aztroApiURL, {
-    method: 'POST'
-})
-.then(response => response.json())
-.then(json => {
-    console.log(json);
-    const date = json.current_date;
-    console.log(date);
-});
+function setHoroscope() {
+    var aztroApiFetch = aztroApiURL + sign + '&day=today';
+    fetch(aztroApiFetch, {
+        method: 'POST'
+    })
+    .then(response => response.json())
+    .then(json => {
+        console.log(json);
+        const date = json.current_date;
+        console.log(date);
+    });    
+}
+
+
+
 
 // function to fetch data from Aztro
 
