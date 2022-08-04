@@ -7,8 +7,7 @@ var gameRecsEl = $('#game-recs');
 var horoscopeEl = $('#horoscope');
 var inputMoodEl = $('#user-input-mood');
 var horoscopeMoodEl = $('#horoscope-mood');
-var sign = '';
-var mood = '';
+
 // APIs URLs and API Keys
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
 var rawgApiUrl = 'https://api.rawg.io/api/genres?key=' + rawgAPIKey;
@@ -30,6 +29,12 @@ var genreIndexes = [
     'leo', // Platformer
     'aries', // Racing
 ];
+
+// Global Variables for storing game and genre from API calls
+var sign = '';
+var mood = '';
+var currentGame = '';
+var currentGenre = '';
 
 // Handle changing page through carosel/cycling
 // display/showing
@@ -64,23 +69,21 @@ function getGames() {
         return reponse.json()
     })
     .then (function (data) {
-        console.log(data);
-        console.log(gameGenreEl);
-        //gameRecsEl[0].textContent = data.results[1].games[0].name;
-
         // Genre 
         var signGenreIndex = 0;
         for (let i = 0; i < genreIndexes.length; i++) {
             if (sign == genreIndexes[i]) {
                 gameGenreEl[0].textContent = data.results[i].name;
                 signGenreIndex = i;
+                currentGenre = data.results[i].name;
             }
         }
         
         // Game Recs 
         for (let i = 0; i < 6; i++) {
             console.log(gameRecsEl[0]);
-            gameRecsEl[0].children[i].textContent = data.results[signGenreIndex].games[i].name;
+            $(gameRecsEl[0]).append('<p class="text-center">' + data.results[signGenreIndex].games[i].name + '</p>');
+            currentGame = data.results[signGenreIndex].games[i].name;
         }
     })
 }
@@ -98,6 +101,12 @@ function setHoroscope() {
     });    
 }
 
+// Stores mood, and sign for future reference in local storage
+$('#save-btn').on('click', storeGames);
+function storeGames() {
+    localStorage.setItem('mood', mood);
+    localStorage.setItem('sign', sign);
+}
 
 
 

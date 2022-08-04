@@ -122,33 +122,30 @@
         <div class="hidden" id="results-page">
             <h2 class="text-center text-6xl mb-12"> Your Results </h2>
             <!-- Container for grid -->
-            <div class="grid grid-rows-3 lg:grid-rows-2 lg:grid-cols-2 grid-flow-col mx-8 gap-8">
+            <div class="grid grid-rows-4 lg:grid-rows-2 lg:grid-cols-2 grid-flow-col mx-8 gap-8">
                 <!-- Genre -->
                 <div>
                     <h3 class="text-center text-4xl"> Genre</h3>
-                    <p class="my-4 p-4" id="game-genre">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eum sunt rerum eveniet ullam non molestiae possimus vitae? Dolorem optio facere quisquam voluptatem quia quae totam necessitatibus, provident nihil reprehenderit?</p>
+                    <p class="text-center my-4 p-4 text-3xl" id="game-genre"></p>
                 </div>
                 <!-- Games-->
                 <div>
                     <h3 class="text-center text-4xl"> Recs</h3>
-                    <div class="my-4 p-4" id="game-recs">
-                        <p></p>    
-                        <p></p> 
-                        <p></p> 
-                        <p></p> 
-                        <p></p> 
-                        <p></p> 
-                    </div>
+                    <div class="my-4 p-4 text-3xl" id="game-recs"></div>
                 </div>
                 <!-- Horoscope -->
-                <div class="row-span-2" id="horoscope">
+                <div class="" id="horoscope">
                     <h3 class="text-center text-4xl"> Your Daily Horoscope</h3>
-                    <div class="my-4 p-4">
+                    <div class="my-4 p-4 text-3xl">
                         <p> You are feeling <i id="user-input-mood">cool</i> </p>
-                        <p> Your horoscope says you're<i id="horoscope-mood">uncool</i> </p>  
+                        <p> Your horoscope says you're <i id="horoscope-mood">uncool</i> </p>  
                         <p id="horoscope-description"></p>      
                     </div>
                 </div>   
+                <!-- Save button-->
+                <div>
+                    <button id="save-btn"> Save Result </button>
+                </div>
             </div>  
         </div>
     </main>
