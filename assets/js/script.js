@@ -50,6 +50,17 @@ fetch (rawgApiUrl)
 })
 
 
+    fetch (rawgApiUrl)
+    .then (function (reponse) {
+        return reponse.json()
+    })
+    .then (function (data) {
+        console.log(data);
+        $('#game-recs').textContent = data.name;
+        $('#game-genre').textContent = data.genres;
+    })
+
+
 // const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
 // fetch (rawgApiUrl, {
 //     method: 'POST'
