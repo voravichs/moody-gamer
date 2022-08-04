@@ -108,8 +108,6 @@ function storeGames() {
     localStorage.setItem('sign', sign);
 }
 
-
-
 // function to fetch data from Aztro
 
 // function display the data
