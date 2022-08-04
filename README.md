@@ -45,18 +45,25 @@ This project is an app to suggest what games a user should play depending on ast
 
 * Moody Gamer Front Page
 
+* Website Emotion
+
 
 ## Contributors
 
 Joshua Rae: https://github.com/joshuar2155
+
 Jake McMillan: https://github.com/jakewmcmillan
+
 Tabitha Spencer-Salmon: https://github.com/TabithaLy
+
 Voravich Silapachairueng: https://github.com/voravichs
 
 ## Credits
 
 Credit to https://emma.ca/zodiac-signs for the zodiac pictures.
+
 Credit to https://www.schemecolor.com/night-sky-color-palette.php for the background gradient.
+
 Credit to https://cssgradient.io/ for easy CSS gradient creation.
 
 ## Github Deployed Site Link and Repository Link
