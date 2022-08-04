@@ -48,8 +48,8 @@ fetch (rawgApiUrl)
 })
 .then (function (data) {
     console.log(data);
-    $('#game-recs').textContent = data.name;
-    $('#game-genre').textContent = data.genres;
+    gameRecsEl[0].textContent = data.results[1].games[0].name;
+    gameGenreEl[0].textContent = data.results[1].games[0].name;
 })
 
 const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
