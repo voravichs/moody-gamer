@@ -35,18 +35,32 @@ This project is an app to suggest what games a user should play depending on ast
 
 ## Procedure
 
-### Order of Operations
-HTML: Together
-CSS + JS Cycling: Pairs
-API Display: Pairs
 
-### Pairs
-CSS + JS Cycling: Voravich & Tabitha
 
-API Research and Display:  Jake & Josh
+## Usage Instructions
 
-### Credits
 
-https://emma.ca/zodiac-signs
-https://www.schemecolor.com/night-sky-color-palette.php
-https://cssgradient.io/
+
+## Screenshots
+
+* Moody Gamer Front Page
+
+
+## Contributors
+
+Joshua Rae: https://github.com/joshuar2155
+Jake McMillan: https://github.com/jakewmcmillan
+Tabitha Spencer-Salmon: https://github.com/TabithaLy
+Voravich Silapachairueng: https://github.com/voravichs
+
+## Credits
+
+Credit to https://emma.ca/zodiac-signs for the zodiac pictures.
+Credit to https://www.schemecolor.com/night-sky-color-palette.php for the background gradient.
+Credit to https://cssgradient.io/ for easy CSS gradient creation.
+
+## Github Deployed Site Link and Repository Link
+
+GitHub Repository: https://github.com/voravichs/moody-gamer
+
+GitHub Pages Deployment: https://voravichs.github.io/moody-gamer/

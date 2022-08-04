@@ -45,32 +45,9 @@ fetch (rawgApiUrl)
 })
 .then (function (data) {
     console.log(data);
-    $('#game-recs').textContent = data.name;
-    $('#game-genre').textContent = data.genres;
+    gameRecsEl[0].textContent = data.results[1].games[0].name;
+    gameGenreEl[0].textContent = data.results[1].games[0].name;
 })
-
-
-fetch (rawgApiUrl)
-.then (function (reponse) {
-    return reponse.json()
-})
-.then (function (data) {
-    console.log(data);
-    $('#game-recs').textContent = data.name;
-    $('#game-genre').textContent = data.genres;
-})
-
-
-// const rawgApiUrl = 'https://api.rawg.io/api/platforms?key=' + rawgAPIKey;
-// fetch (rawgApiUrl, {
-//     method: 'POST'
-// })
-// .then(response => response.json())
-// .then(json => {
-//     console.log(json);
-//     document.querySelector('#game-recs').textContent = json.name;
-//         document.querySelector('#game-genre').textContent = json.genres;
-// })
 
 const aztroApiURL = 'https://aztro.sameerkumar.website/?sign=aries&day=today';
 fetch(aztroApiURL, {
