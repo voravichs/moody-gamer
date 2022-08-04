@@ -2,7 +2,7 @@
 
 ## Description
 
-    This project is an app to suggest what games a user should play depending on astrological signs and their selected mood. We will implement an Aztro Astrology API and the RAWG video game API to get parameters for video game selection, while the user mood will be self-selected. 
+This project is an app to suggest what games a user should play depending onastrological signs and their selected mood. We will implement an Aztro AstrologyAPI and the RAWG video game API to get parameters for video game selection, whilethe user mood will be self-selected. 
 
 ## User Stories
 
@@ -34,7 +34,7 @@
 
 ## Usage Instructions
 
-    Upon loading the app, user is presented with a welcome page and a button saying "Start Here ->." Clicking that button will direct the user to a page that asks them to select their astrological sign. Hovering over any of the signs will add a border to the picture for additional button affordance. Selecting an astrological sign will direct the user to a page asking for their current mood. These six moods represent common moods adapted from 
+Upon loading the app, user is presented with a welcome page and a button saying "Start Here ->." Clicking that button will direct the user to a page that asks them to select their astrological sign. Hovering over any of the signs will add a border to the picture for additional button affordance. Selecting an astrological sign will direct the user to a page asking for their current mood. These six moods represent common moods adapted from 
 
 ## Screenshots
 
@@ -53,24 +53,24 @@
 
 ## Contributors
 
-    Joshua Rae: https://github.com/joshuar2155
+Joshua Rae: https://github.com/joshuar2155
 
-    Jake McMillan: https://github.com/jakewmcmillan
+Jake McMillan: https://github.com/jakewmcmillan
 
-    Tabitha Spencer-Salmon: https://github.com/TabithaLy
+Tabitha Spencer-Salmon: https://github.com/TabithaLy
 
-    Voravich Silapachairueng: https://github.com/voravichs
+Voravich Silapachairueng: https://github.com/voravichs
 
 ## Credits
 
-    Credit to https://emma.ca/zodiac-signs for the zodiac pictures.
+Credit to https://emma.ca/zodiac-signs for the zodiac pictures.
 
-    Credit to https://www.schemecolor.com/night-sky-color-palette.php for the background gradient.
+Credit to https://www.schemecolor.com/night-sky-color-palette.php for thebackground gradient.
 
-    Credit to https://cssgradient.io/ for easy CSS gradient creation.
+Credit to https://cssgradient.io/ for easy CSS gradient creation.
 
 ## Github Deployed Site Link and Repository Link
 
-    GitHub Repository: https://github.com/voravichs/moody-gamer
+GitHub Repository: https://github.com/voravichs/moody-gamer
 
-    GitHub Pages Deployment: https://voravichs.github.io/moody-gamer/
+GitHub Pages Deployment: https://voravichs.github.io/moody-gamer/
