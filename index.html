@@ -6,141 +6,156 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moody Gamer</title>
+    <!-- Link to Tailwind CSS-->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Links to CSS -->
+    <!-- Link to Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">  
+    <!-- Link to CSS -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
 </head>
 
-<body>
+<body class="gradient-bg">
     <!-- Persistent Moody Gamer Header -->
-    <header class="container mx-auto">
-        <h1 class="text-center text-8xl mb-8 p-8"> Moody Gamer </h1>
+    <header class="container mx-auto mb-8 p-8">
+        <h1 class="text-center text-7xl lg:text-8xl text-fuchsia-300 font-bold underline decoration-amber-200"> Moody Gamer </h1>
     </header>
 
     <!-- Container for main content -->
     <main class="container mx-auto max-w-screen-xl" id="main-content">
         <!-- Start Page -->
-        <div class="grid grid-rows-3 gap-8" id="start-page">
-            <h2 class="text-center text-6xl mb-9">Welcome!</h2>
-            <h2 class="text-center text-6xl mb-9"> Do you want to play a game?</h2>
-            <button class="bg-sky-500 text-6xl rounded-lg" id="start-btn">Start Here -></button>
+        <div class="grid grid-rows-3 gap-8 mx-8 page" id="start-page">
+            <h2 class="text-center text-5xl md:text-6xl my-auto">Welcome!</h2>
+            <h2 class="text-center text-5xl md:text-6xl my-auto"> Do you want to play a game?</h2>
+            <button class="bg-indigo-500 hover:bg-indigo-600 drop-shadow-lg text-6xl hover:text-fuchsia-200 rounded-lg mx-auto p-8" id="start-btn">Start Here -></button>
+        </div>
+
+        <!-- Astrology Sign Page -->
+        <div class="hidden mx-8 page" id="sign">
+            <h2 class="text-center text-5xl mb-20">What's your Astrological sign?</h2>
+            <!-- Container for grid of signs-->
+            <div class="grid grid-rows-6 grid-cols-2 md:grid-rows-4 md:grid-cols-3 lg:grid-rows-3 lg:grid-cols-4 gap-y-6">
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-rose-400 to-red-600 mx-auto"  src="./assets/images/aries-trans.png" alt="aries">
+                    <p class="mt-4 text-4xl">Aries</p>
+                    <p class="mt-2">March 21st-April 20th</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-lime-300 to-green-600 mx-auto" src="./assets/images/taurus-trans.png" alt="taurus">
+                    <p class="mt-4 text-4xl">Taurus</p>
+                    <p class="mt-2">April 21st-May 20th</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-amber-200 to-yellow-600 mx-auto" src="./assets/images/gemini-trans.png" alt="gemini">
+                    <p class="mt-4 text-4xl">Gemini</p>
+                    <p class="mt-2">May 21st-June 20th</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-slate-300 to-zinc-700 mx-auto" src="./assets/images/cancer-trans.png" alt="cancer">
+                    <p class="mt-4 text-4xl">Cancer</p>
+                    <p class="mt-2">June 21st-July 22nd</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-yellow-300 to-amber-600 mx-auto" src="./assets/images/leo-trans.png" alt="leo">
+                    <p class="mt-4 text-4xl">Leo</p>
+                    <p class="mt-2">July 23rd-August 22nd</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-yellow-600 to-orange-900 mx-auto" src="./assets/images/virgo-trans.png" alt="virgo">
+                    <p class="mt-4 text-4xl">Virgo</p>
+                    <p class="mt-2">August 23rd-September 22nd</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-rose-300 to-pink-700 mx-auto" src="./assets/images/libra-trans.png" alt="libra">
+                    <p class="mt-4 text-4xl">Libra</p>
+                    <p class="mt-2">September 23rd-October 22nd</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-gray-600 to-slate-900 mx-auto" src="./assets/images/scorpio-trans.png." alt="scorpio">
+                    <p class="mt-4 text-4xl">Scorpio</p>
+                    <p class="mt-2">October 23rd-November 22nd</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-fuchsia-400 to-purple-700 mx-auto" src="./assets/images/sagittarius-trans.png" alt="sagittarius">
+                    <p class="mt-4 text-4xl">Sagittarius</p>
+                    <p class="mt-2">November 23rd-December 21st</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-neutral-400 to-gray-700 mx-auto" src="./assets/images/capricorn-trans.png" alt="capricorn">
+                    <p class="mt-4 text-4xl">Capricorn</p>
+                    <p class="mt-2">December 22nd-January 19th</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-blue-200 to-cyan-600 mx-auto" src="./assets/images/aquarius-trans.png" alt="aquarius">
+                    <p class="mt-4 text-4xl">Aquarius</p>
+                    <p class="mt-2">January 20th-February 19th</p>
+                </button>
+                <button class="mb-10 btn">
+                    <img class="w-4/5 border-none border-8 hover:border-solid border-neutral-50 rounded-full bg-gradient-to-r from-lime-200 to-emerald-500 mx-auto" src="./assets/images/pisces-trans.png" alt="pisces">
+                    <p class="mt-4 text-4xl">Pisces</p>
+                    <p class="mt-2">February 20th-March 20th</p>
+                </button>
+            </div>
         </div>
 
         <!-- Mood Page -->
-        <div class="hidden" id="mood-choices">
+        <div class="hidden mx-8 page" id="mood-choices">
             <h2 class="text-center text-6xl mb-20">How are you feeling today?</h2>
             <!-- Container for grid of moods-->
-            <div class="grid grid-rows-6 grid-cols-2 md:grid-rows-3 md:grid-cols-4 gap-y-9">
-                <button class="text-center text-9xl mb-9 ml-5 icon" id="happy">&#128512;</button>
-                <p class="mb-9 mr-5">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, mollitia
+            <div class="grid grid-rows-6 grid-cols-2 md:grid-rows-3 md:grid-cols-4 gap-y-9 mx-5">
+                <button class="text-center text-9xl mb-9 icon" id="happy">&#128512;</button>
+                <p class="ml-4 mb-8">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem, mollitia
                     dolorum? Est, iste laboriosam! Similique, in ex impedit quam perspiciatis laboriosam voluptatibus,
                     totam deleniti libero itaque, illum quas voluptatem labore!</p>
-                <button class="text-center text-9xl mb-9 ml-5 icon" id="silly">&#128541;</button>
-                <p class="mb-9 mr-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae
+                <button class="text-center text-9xl mb-9 icon" id="silly">&#128541;</button>
+                <p class="ml-4 mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis repudiandae
                     nihil quod provident ratione reprehenderit eligendi quis qui vitae non sed, iste facilis molestiae
                     suscipit doloremque obcaecati modi nam quibusdam.</p>
-                <button class="text-center text-9xl mb-9 ml-5 icon" id="neutral">&#128528;</button>
-                <p class="mb-9 mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque illum
+                <button class="text-center text-9xl mb-9 icon" id="neutral">&#128528;</button>
+                <p class="ml-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda doloremque illum
                     dicta doloribus distinctio culpa sapiente repudiandae accusamus tenetur nesciunt mollitia
                     blanditiis, deleniti minima beatae reprehenderit pariatur quas, similique numquam!</p>
-                <button class="text-center text-9xl mb-9 ml-5 icon" id="sad">&#128532;</button>
-                <p class="mb-9 mr-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi nulla officia
+                <button class="text-center text-9xl mb-9 icon" id="sad">&#128532;</button>
+                <p class="ml-4 mb-8">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nisi nulla officia
                     iste rerum cum! Animi molestiae libero aliquam perspiciatis natus obcaecati et! Odio natus nemo esse
                     fugiat accusamus rerum.</p>
-                <button class="text-center text-9xl mb-9 ml-5 icon" id="fear">&#128534;</button>
-                <p class="mb-9 mr-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perspiciatis
+                <button class="text-center text-9xl mb-9 icon" id="fear">&#128534;</button>
+                <p class="ml-4 mb-8">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia perspiciatis
                     autem id soluta vel! Minus veritatis et cupiditate quia asperiores. Cumque obcaecati est sint! Illum
                     corporis iure impedit fugit libero!</p>
-                <button class="text-center text-9xl mb-9 ml-5 icon" id="angry">&#128545;</button>
-                <p class="mb-9 mr-5">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quas tenetur
+                <button class="text-center text-9xl mb-9 icon" id="angry">&#128545;</button>
+                <p class="ml-4 mb-8">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint quas tenetur
                     numquam, ab atque, reprehenderit assumenda maiores saepe veritatis ut, laudantium maxime at
                     exercitationem quis magni illo eaque quisquam eligendi?</p>
             </div>
         </div>
 
-        <!-- Astrology Sign Page -->
-        <div class="hidden" id="sign">
-            <h2 class="text-center text-6xl mb-20">What's your Astrological sign?</h2>
-            <!-- Container for grid of signs-->
-            <div class="grid grid-rows-6 grid-cols-2  md:grid-rows-4 md:grid-cols-3  lg:grid-rows-3 lg:grid-cols-4 gap-y-6">
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/aquarius.png" alt="aquarius">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/pisces.png" alt="pisces">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/aries.png" alt="aries">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/taurus.png" alt="taurus">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/gemini.png" alt="gemini">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/cancer.png" alt="cancer">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/leo.png" alt="leo">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/virgo.png" alt="virgo">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/libra.png" alt="libra">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/scorpio.png" alt="scorpio">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/sagittarius.png" alt="sagittarius">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-                <button class="mb-10 flex flex-col items-center btn">
-                    <img class="w-4/5" src="./assets/images/capricorn.png" alt="capricorn">
-                    <p class="block">Lorem ipsum dolor.</p>
-                </button>
-            </div>
-        </div>
-
-
         <!-- Results Page -->
-        <div class="hidden" id="results-page">
-            <h2> Your Results </h2>
-
-            <!-- Game Recommendations-->
-            <div>
+        <div class="hidden page" id="results-page">
+            <h2 class="text-center text-6xl mb-12"> Your Results </h2>
+            <!-- Container for grid -->
+            <div class="grid grid-rows-3 lg:grid-rows-2 lg:grid-cols-2 grid-flow-col mx-8 gap-8">
                 <!-- Genre -->
                 <div id="game-genre">
-                    <p></p>
+                    <h3 class="text-center text-4xl"> Genre</h3>
+                    <p class="my-4 p-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, eum sunt rerum eveniet ullam non molestiae possimus vitae? Dolorem optio facere quisquam voluptatem quia quae totam necessitatibus, provident nihil reprehenderit?</p>
                 </div>
                 <!-- Games-->
                 <div id="game-recs">
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <h3 class="text-center text-4xl"> Recs</h3>
+                    <p class="my-4 p-4">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta asperiores, doloribus earum illum assumenda eaque architecto nulla. Repudiandae et quidem culpa possimus, corrupti ratione nemo ut, minima dolore alias consequuntur.</p>
                 </div>
+                <!-- Horoscope -->
+                <div class="row-span-2" id="horoscope">
+                    <h3 class="text-center text-4xl"> Your Daily Horoscope</h3>
+                    <div class="my-4 p-4">
+                        <p> You are feeling <span id="user-input-mood"></span> </p>
+                        <p> But your horoscope says <span id="horoscope-mood"></span> </p>    
+                    </div>
+                </div>   
             </div>
-            <!-- Horoscope -->
-            <div id="horoscope">
-                <p> You are feeling <span id="user-input-mood"></span> </p>
-                <p> But your horoscope says <span id="horoscope-mood"></span> </p>
-            </div>
+
+            
         </div>
     </main>
 

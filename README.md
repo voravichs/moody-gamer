@@ -44,3 +44,8 @@ API Display: Pairs
 CSS + JS Cycling: Voravich & Tabitha
 
 API Research and Display:  Jake & Josh
+
+### Credits
+
+https://emma.ca/zodiac-signs
+https://www.schemecolor.com/night-sky-color-palette.php
