@@ -1,0 +1,33 @@
+:root {
+    --chineseviolet: #855988;
+    --darklavender: #6b4984;
+    --regalia: #483475;
+    --darkblue: #2b2f77;
+    --spadecadet: #141852;
+    --cetaceanblue: #070b34;
+}
+  
+
+body {
+    font-family: 'Comfortaa', cursive;
+}
+
+h1 {
+    font-family: 'Audiowide', cursive;
+}
+
+main {
+    color: white;
+}
+
+.gradient-bg {
+    background: var(--regalia);
+    background: linear-gradient(
+        90deg, 
+        var(--chineseviolet) 0%,
+        var(--darklavender) 20%,
+        var(--regalia) 40%,
+        var(--darkblue) 65%,
+        var(--spadecadet) 85%,
+        var(--cetaceanblue) 100%);
+}
