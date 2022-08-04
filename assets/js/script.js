@@ -8,7 +8,8 @@ var gameRecsEl = $('#game-recs');
 var horoscopeEl = $('#horoscope');
 var inputMoodEl = $('#user-input-mood');
 var horoscopeMoodEl = $('#horoscope-mood');
-
+var sign = '';
+var mood = '';
 // make var for RAWG API
 var rawgAPIKey = '55468ae1e1444c17bf3c3a29d8b79732';
 
@@ -26,14 +27,16 @@ $(document).ready(function() {
         if (btnClicked.is('img')) {
             signPageEl.toggleClass('hidden');
             moodPageEl.toggleClass('hidden');
-            console.log(event.target.alt);
+            sign = event.target.alt; 
+            console.log(sign);
         }  
     });
     // Mood Page -> Results Page
     $('.icon').click(function(event){
         moodPageEl.toggleClass('hidden');
         resultPageEl.toggleClass('hidden');
-        console.log(event.target.id);
+        mood = event.target.id; 
+        console.log(mood);
     });
 });
 
