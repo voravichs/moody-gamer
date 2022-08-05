@@ -2,7 +2,7 @@
 
 ## Description
 
-This project is an app to suggest what games a user should play depending onastrological signs and their selected mood. We will implement an Aztro AstrologyAPI and the RAWG video game API to get parameters for video game selection, whilethe user mood will be self-selected. 
+This project is an app to suggest what games a user should play depending onastrological signs and their selected mood. We will implement an Aztro Astrology API and the RAWG video game API to get parameters for video game selection, whilethe user mood will be self-selected. 
 
 ## User Stories
 
